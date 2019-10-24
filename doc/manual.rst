@@ -244,6 +244,15 @@ Multiline documentation comments also exist and support nesting too:
     here.
     ]##
 
+The `discard statement <#statements-and-expressions-discard-statement>`_
+can also be used together with `long string literals
+<#lexical-analysis-triple-quoted-string-literals>`_ to create block comments:
+
+.. code-block:: nim
+    :test: "nim c $1"
+  discard """ You can have any Nim code text commented
+  out inside this with no indentation restrictions.
+        yes("May I ask a pointless question?") """
 
 Identifiers & Keywords
 ----------------------
